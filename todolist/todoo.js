@@ -1,7 +1,7 @@
 let todoItems = [];
 let finishedItems = [];
 
-//输出待办事项
+//输出待办事项列表
 function renderTodoItemslist(todoItems, finishedItems) {
     let listEle = document.querySelector(".todolist-frame > .list");
 
@@ -78,12 +78,11 @@ function renderTodoItemslist(todoItems, finishedItems) {
     }
 }
 
-//输出完成事项
+//输出完成事项的列表
 function renderFinishedItemslist(finishedItems) {
     let listEle = document.querySelector(".todolist-frame2");
 
     listEle.innerHTML = "";
-    document.getElementById("input-frame").value = "";
 
     for (let i = 0; i < finishedItems.length; i++) {
         let item = finishedItems[i];
